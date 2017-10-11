@@ -18,7 +18,7 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c rollup.config.js -f cjs -o $npm_package_main $npm_package_jsnext_main",
     "lint": "eslint src",
-    "test": "npm run lint && npm run build",
+    "test": "npm run build && npm run lint",
     "prepublish": "npm test"
   },
   "eslintConfig": {
