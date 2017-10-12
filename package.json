@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webstronauts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Standard eslint rules for all Webstronauts JavaScript projects",
   "license": "MIT",
   "repository": "webstronauts/eslint-config-webstronauts",
