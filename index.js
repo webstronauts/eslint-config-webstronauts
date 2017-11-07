@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   parser: require.resolve('babel-eslint'),
   extends: 'airbnb',
   rules: {
