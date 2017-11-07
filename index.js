@@ -1,6 +1,12 @@
 module.exports = {
+  extends: [
+    'airbnb',
+    'plugin:flowtype/recommended',
+  ],
   parser: require.resolve('babel-eslint'),
-  extends: 'airbnb',
+  plugins: [
+    'flowtype'
+  ],
   rules: {
     'array-bracket-spacing': [ 'error', 'always', { objectsInArrays: false }],
     'arrow-parens': [ 'error', 'as-needed' ],
@@ -11,5 +17,10 @@ module.exports = {
       extensions: [ '.js', '.jsx' ]
     }],
     'react/prop-types': 'off'
+  },
+  settings: {
+    flowtype: {
+      onlyFilesWithFlowAnnotation: true
+    }
   }
 };
